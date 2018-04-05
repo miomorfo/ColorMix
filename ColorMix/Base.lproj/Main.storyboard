@@ -18,40 +18,102 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hox-tX-PYU">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hox-tX-PYU">
                                 <rect key="frame" x="67" y="70" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3bS-AY-OOw">
-                                <rect key="frame" x="163" y="318" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="WB3-7m-kdR"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5Pn-06-PPf">
-                                <rect key="frame" x="163" y="380" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5Pn-06-PPf">
+                                <rect key="frame" x="31" y="325" width="51" height="31"/>
+                                <color key="onTintColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="6Ky-Ur-6Bj"/>
                                 </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="L2y-Kp-DEF">
-                                <rect key="frame" x="163" y="445" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="L2y-Kp-DEF">
+                                <rect key="frame" x="31" y="407" width="51" height="31"/>
+                                <color key="onTintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ef3-hn-CqW"/>
                                 </connections>
                             </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Il-cE-9pt">
+                                <rect key="frame" x="128" y="240" width="118" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="vPf-4B-q7V"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="nZ5-ah-TSZ"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="17R-5a-5Tz">
+                                <rect key="frame" x="126" y="326" width="118" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="ra1-7X-Mwf"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="nD4-0R-7T6"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sxT-pK-lrC">
+                                <rect key="frame" x="124" y="408" width="118" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="1b5-DF-Udz"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="4ph-wM-VMg"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPO-4I-bnq">
+                                <rect key="frame" x="168" y="589" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kz5-88-kqJ"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3bS-AY-OOw">
+                                <rect key="frame" x="31" y="239" width="51" height="31"/>
+                                <color key="onTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="WB3-7m-kdR"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L2y-Kp-DEF" secondAttribute="bottom" constant="229" id="5ib-Hp-IDf"/>
+                            <constraint firstItem="L2y-Kp-DEF" firstAttribute="top" secondItem="5Pn-06-PPf" secondAttribute="bottom" constant="51" id="5j8-sB-Ibh"/>
+                            <constraint firstItem="L2y-Kp-DEF" firstAttribute="centerY" secondItem="sxT-pK-lrC" secondAttribute="centerY" id="6aC-lQ-gM0"/>
+                            <constraint firstItem="Hox-tX-PYU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="7MX-9S-3rv"/>
+                            <constraint firstItem="Hox-tX-PYU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="CEq-bx-Grg"/>
+                            <constraint firstItem="3bS-AY-OOw" firstAttribute="top" secondItem="Hox-tX-PYU" secondAttribute="bottom" constant="41" id="Ct5-3G-Osz"/>
+                            <constraint firstItem="5Pn-06-PPf" firstAttribute="top" secondItem="3bS-AY-OOw" secondAttribute="bottom" constant="55" id="EV6-Fa-Xju"/>
+                            <constraint firstItem="2Il-cE-9pt" firstAttribute="centerX" secondItem="GPO-4I-bnq" secondAttribute="centerX" id="N32-Ef-DiV"/>
+                            <constraint firstItem="17R-5a-5Tz" firstAttribute="leading" secondItem="5Pn-06-PPf" secondAttribute="trailing" constant="48" id="OTU-xd-6km"/>
+                            <constraint firstItem="Hox-tX-PYU" firstAttribute="centerX" secondItem="2Il-cE-9pt" secondAttribute="centerX" id="OzQ-Pu-oFF"/>
+                            <constraint firstItem="Hox-tX-PYU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QBz-Ne-853"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="17R-5a-5Tz" secondAttribute="trailing" constant="133" id="Qnl-Lw-eY1"/>
+                            <constraint firstItem="3bS-AY-OOw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="SOQ-M5-jH6"/>
+                            <constraint firstItem="5Pn-06-PPf" firstAttribute="centerY" secondItem="17R-5a-5Tz" secondAttribute="centerY" id="XX3-PW-aM1"/>
+                            <constraint firstItem="5Pn-06-PPf" firstAttribute="leading" secondItem="L2y-Kp-DEF" secondAttribute="leading" id="YcE-hy-f57"/>
+                            <constraint firstItem="2Il-cE-9pt" firstAttribute="leading" secondItem="3bS-AY-OOw" secondAttribute="trailing" constant="50" id="cKE-AQ-Gtz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GPO-4I-bnq" secondAttribute="bottom" constant="48" id="gH4-Pe-HPC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sxT-pK-lrC" secondAttribute="trailing" constant="135" id="lHi-Xt-ILv"/>
+                            <constraint firstItem="3bS-AY-OOw" firstAttribute="leading" secondItem="5Pn-06-PPf" secondAttribute="leading" id="oUh-vg-2dw"/>
+                            <constraint firstItem="sxT-pK-lrC" firstAttribute="leading" secondItem="L2y-Kp-DEF" secondAttribute="trailing" constant="46" id="pI1-Rd-nvT"/>
+                            <constraint firstItem="3bS-AY-OOw" firstAttribute="centerY" secondItem="2Il-cE-9pt" secondAttribute="centerY" id="r6y-C0-DXb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="blueSlider" destination="sxT-pK-lrC" id="rkI-J4-AcJ"/>
                         <outlet property="blueSwitch" destination="3bS-AY-OOw" id="gRv-wY-AOv"/>
                         <outlet property="colorView" destination="Hox-tX-PYU" id="dia-nf-MoQ"/>
+                        <outlet property="greenSlider" destination="17R-5a-5Tz" id="cLF-o0-Wih"/>
                         <outlet property="greenSwitch" destination="L2y-Kp-DEF" id="x5X-9j-YGa"/>
+                        <outlet property="redSlider" destination="2Il-cE-9pt" id="Ebw-8r-T8W"/>
                         <outlet property="redSwitch" destination="5Pn-06-PPf" id="IMP-YL-per"/>
                     </connections>
                 </viewController>
